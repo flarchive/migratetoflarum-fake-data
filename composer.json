@@ -1,0 +1,50 @@
+{
+    "name": "migratetoflarum/fake-data",
+    "description": "Generate fake data for testing.",
+    "keywords": [
+        "extension",
+        "flarum",
+        "fake",
+        "data"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/migratetoflarum/fake-data/issues",
+        "source": "https://github.com/migratetoflarum/fake-data",
+        "forum": "https://discuss.flarum.org/d/21160"
+    },
+    "require": {
+        "flarum/core": "^1.3",
+        "fakerphp/faker": "^1.14"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Fake Data",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-database",
+                "backgroundColor": "#e7672e",
+                "color": "#fafafa"
+            },
+            "optional-dependencies": [
+                "flarum/tags"
+            ]
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/21160"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MigrateToFlarum\\FakeData\\": "src/"
+        }
+    }
+}
